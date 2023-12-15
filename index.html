@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:0;
+        padding: 0;
+    }
+    * {
+        box-sizing: border-box;
+        }
+       
+    .navbar{
+        border: 1px red solid;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar div{
+        margin-top: 10px;
+    }
+    .navbar-brand img{
+        border-radius: 25%;
+        height: 150px;
+        width: 150px;
+    }
+    .navbar-links{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .navbar-links :hover{
+        color: darkred;
+        transition:  ease 0.5s;
+    }
+    .navbar-search input{
+        border-radius: 67px;
+        padding: 10px;
+        background-color: lightgrey;
+        cursor: pointer;
+        margin-bottom: 5px;
+        border: none;
+        
+    }
+    .navbar-links a{
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 18px;
+        font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .middle-column{
+        padding: 20px;
+        flex-grow: 1;
+        text-align: left;
+    }
+    .column_left-column{
+        background-color: grey;
+    }
+    .column_right-column{
+        display: none;
+    }
+
+    @media (min-width:768px) {
+        .container{
+            flex-direction: row;
+
+        }
+        .column_left-column{
+            width: 60px;
+            border: 1px solid red;
+        }
+        .column_right-column{
+            display: block;
+            border: 1px solid red;
+
+        }
+        .navbar{
+            
+            flex-direction: row;
+        }
+        .navbar-links{
+            flex-direction: row;
+            padding: 0 5px;
+        }
+        .navbar-brand img{
+            height: 75px;
+            width: 75px;
+        }
+        .navbar-search input{
+            margin-bottom: 0px;
+            margin-right: 5px;
+
+        }
+    }
+    @media (min-width:868px) {
+        .column_left-column{
+            min-width: 120px;
+        }
+        .column_right-column{
+            min-width: 120px;
+        }
+    }
+
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#">
+                    <img src="_63e52265-b03a-4455-bdc0-7c105abba84c.jpg" alt="logo">
+                </a>
+            </div>
+            <div class= "navbar-links">
+                <a href="#">Strona główna</a>
+                <a href="#">o nas</a>
+                <a href="#">Produkty</a>
+                <a href="#">kontakt</a>
+            </div>
+            <div class="navbar-search">
+                <input type="text" placeholder="Szukaj...">
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="column_left-column">column1</div>
+        <div class="middle-column">
+            column2
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sunt nesciunt. Eligendi in, tempore rerum magnam natus accusamus neque aut corrupti minus rem odio, perspiciatis earum incidunt illum, eaque excepturi? Eligendi aperiam provident odit omnis cum veniam, a nostrum incidunt at dolor esse natus asperiores possimus modi quidem dicta laboriosam nihil eaque culpa dolorum, iure quia. Accusantium alias nulla aliquam architecto voluptas odit! Maiores tenetur sed possimus quidem et cumque voluptatibus enim doloremque, recusandae odio. Corporis accusantium atque eaque ipsa nisi magni quaerat provident modi, dicta, autem eveniet enim impedit! Fugiat dolor quo nobis odit exercitationem provident harum, at ullam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sunt nesciunt. Eligendi in, tempore rerum magnam natus accusamus neque aut corrupti minus rem odio, perspiciatis earum incidunt illum, eaque excepturi? Eligendi aperiam provident odit omnis cum veniam, a nostrum incidunt at dolor esse natus asperiores possimus modi quidem dicta laboriosam nihil eaque culpa dolorum, iure quia. Accusantium alias nulla aliquam architecto voluptas odit! Maiores tenetur sed possimus quidem et cumque voluptatibus enim doloremque, recusandae odio. Corporis accusantium atque eaque ipsa nisi magni quaerat provident modi, dicta, autem eveniet enim impedit! Fugiat dolor quo nobis odit exercitationem provident harum, at ullam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sunt nesciunt. Eligendi in, tempore rerum magnam natus accusamus neque aut corrupti minus rem odio, perspiciatis earum incidunt illum, eaque excepturi? Eligendi aperiam provident odit omnis cum veniam, a nostrum incidunt at dolor esse natus asperiores possimus modi quidem dicta laboriosam nihil eaque culpa dolorum, iure quia. Accusantium alias nulla aliquam architecto voluptas odit! Maiores tenetur sed possimus quidem et cumque voluptatibus enim doloremque, recusandae odio. Corporis accusantium atque eaque ipsa nisi magni quaerat provident modi, dicta, autem eveniet enim impedit! Fugiat dolor quo nobis odit exercitationem provident harum, at ullam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sunt nesciunt. Eligendi in, tempore rerum magnam natus accusamus neque aut corrupti minus rem odio, perspiciatis earum incidunt illum, eaque excepturi? Eligendi aperiam provident odit omnis cum veniam, a nostrum incidunt at dolor esse natus asperiores possimus modi quidem dicta laboriosam nihil eaque culpa dolorum, iure quia. Accusantium alias nulla aliquam architecto voluptas odit! Maiores tenetur sed possimus quidem et cumque voluptatibus enim doloremque, recusandae odio. Corporis accusantium atque eaque ipsa nisi magni quaerat provident modi, dicta, autem eveniet enim impedit! Fugiat dolor quo nobis odit exercitationem provident harum, at ullam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sunt nesciunt. Eligendi in, tempore rerum magnam natus accusamus neque aut corrupti minus rem odio, perspiciatis earum incidunt illum, eaque excepturi? Eligendi aperiam provident odit omnis cum veniam, a nostrum incidunt at dolor esse natus asperiores possimus modi quidem dicta laboriosam nihil eaque culpa dolorum, iure quia. Accusantium alias nulla aliquam architecto voluptas odit! Maiores tenetur sed possimus quidem et cumque voluptatibus enim doloremque, recusandae odio. Corporis accusantium atque eaque ipsa nisi magni quaerat provident modi, dicta, autem eveniet enim impedit! Fugiat dolor quo nobis odit exercitationem provident harum, at ullam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sunt nesciunt. Eligendi in, tempore rerum magnam natus accusamus neque aut corrupti minus rem odio, perspiciatis earum incidunt illum, eaque excepturi? Eligendi aperiam provident odit omnis cum veniam, a nostrum incidunt at dolor esse natus asperiores possimus modi quidem dicta laboriosam nihil eaque culpa dolorum, iure quia. Accusantium alias nulla aliquam architecto voluptas odit! Maiores tenetur sed possimus quidem et cumque voluptatibus enim doloremque, recusandae odio. Corporis accusantium atque eaque ipsa nisi magni quaerat provident modi, dicta, autem eveniet enim impedit! Fugiat dolor quo nobis odit exercitationem provident harum, at ullam?</p>
+            </article>
+        </div>
+        <div class="column_right-column">column3</div>
+    </div>
+    
+</body>
+</html>
